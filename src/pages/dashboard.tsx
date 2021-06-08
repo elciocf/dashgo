@@ -3,6 +3,7 @@ import dynamic from 'next/dynamic'
 import { Header } from "../components/Header";
 import { Sidebar } from "../components/Sidebar";
 
+
 const Chart = dynamic(() => import('react-apexcharts'), {
   ssr: false
 } ) 
@@ -28,7 +29,7 @@ const options = {
      enabled: false,
    }, 
    xaxis: {
-     type: 'datetime',
+
      axisBorder: {
        color: theme.colors.gray[600]
      },
